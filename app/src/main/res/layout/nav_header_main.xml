@@ -2,8 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="@dimen/nav_header_height"
-    android:background="@drawable/side_nav_bar"
-    android:gravity="bottom"
+    android:background="@drawable/pattern_for_profile"
     android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -11,24 +10,32 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
-    <ImageView
+    <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="97dp"
+        android:layout_height="97dp"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
+        android:layout_marginTop="22dp"
+        android:layout_gravity="center_horizontal"
         android:src="@android:drawable/sym_def_app_icon" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="@dimen/nav_header_vertical_spacing"
-        android:text="Android Studio"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+        android:text="Hassan Hafez"
+        android:textSize="23sp"
+        android:gravity="center_horizontal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:paddingBottom="5dp"/>
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="android.studio@android.com" />
+        android:textSize="16sp"
+        android:layout_gravity="center_horizontal"
+        android:text="android.studio@android.com"
+        android:layout_marginBottom="22dp"
+        android:paddingTop="5dp"/>
 
 </LinearLayout>
